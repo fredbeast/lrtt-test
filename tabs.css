@@ -1,75 +1,83 @@
 #test-gray {
-    background-color: #c2c2c2;
+     background-color: #c2c2c2;
 }
-
-.tab {
-    cursor: pointer;
+ .tab {
+     cursor: pointer;
 }
-.tab>.tab-img {
-    opacity: 0.6    
+ .tab>.tab-img {
+     opacity: 0.6 
 }
-
-.tab.active>.tab-img{
-    opacity: 1;
+ .tab.active>.tab-img{
+     opacity: 1;
 }
-
-.tab:hover>.tab-img {
-    opacity:0.9;
+ .tab:hover>.tab-img {
+     opacity:0.9;
 }
-
-
-.tab-img {
-    margin: auto;
-    display: block;
-    width: 100%;
+ .tab-img {
+     margin: auto;
+     display: block;
+     width: 100%;
 }
-
-.tab-pane {
-    padding: 0 30px;
+ .tab-pane {
+     padding: 0 30px;
 }
-
-.tab-title {
-    background-color: #37a0fa;
-    text-align: center;
-    padding: 5px;
+ .tab-title {
+     background-color: #37a0fa;
+     text-align: center;
+     padding: 5px;
 }
-
-.tab-container {
-    background: white;
-    min-height: 50px;
-    width: 100%;
+ .tab-container {
+     background: white;
+     min-height: 50px;
+     width: 100%;
 }
-
-@media (max-width: 680px){
-    .tab.active>.tab-title{
-        box-shadow: 0 0 10px #c2c2c2;
-        margin: 7px 0;
+ @media (max-width: 768px){
+     .tab-title {
+         margin:3px 0;
     }
-    .tab-pane {
-        padding: 5px 20px;
+     .tab.active>.tab-title{
+         box-shadow: 0 0 10px #c2c2c2;
+         margin: 7px 0;
     }
-    .tab-container {
-        margin: 10px 0;
+     .tab-pane {
+         padding: 5px 20px;
     }
+     .tab-container {
+         margin: 10px 0;
+    }
+     .tab-pane ul {
+         padding: 0;
+     } 
+     .tab-tick {
+         display: none;
+     }
+     .tab-pane li {
+         border-top: solid 1px #f9f9f9;
+         padding: 10px 0;
+     }
 }
-
-.tab-title h3 {
-    margin-top: 10px;
+ .tab-title h3 {
+     margin-top: 10px;
 }
-
-.tab>.tab-title h3 {
-    color: #FFF;
+ .tab>.tab-title h3 {
+     color: #FFF;
 }
-
-.tab.active > .tab-title {
-    background-color: #FFF;
+ .tab.active > .tab-title {
+     background-color: #FFF;
 }
-.tab.active > .tab-title h3 {
-    color: #333;
+ .tab.active > .tab-title h3 {
+     color: #333;
 }
-
-.tab.active:hover {
-    opacity: 1;
-    cursor: auto;
+ .tab.active:hover {
+     opacity: 1;
+     cursor: auto;
 }
-
+ .tab-pane .tab-tick {
+     width: 25px;
+     height: 25px;
+     padding: 3px;
+     margin: 6px 10px 10px 10px;
+}
+ .tab-pane li {
+     font-size: 17px;
+}
